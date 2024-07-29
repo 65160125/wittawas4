@@ -1,0 +1,144 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: #03346E;
+    padding: 0 20px;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header .logo img {
+    max-height: 100%;
+}
+
+.search-bar {
+    width: 60%;
+    height: 40px;
+    background-color: #DBD6E0; 
+    border-radius: 23px; 
+    padding: 10px; 
+    display: flex; 
+    align-items: center;
+    position: relative; /* Ensure dropdown content is positioned relative to this container */
+}
+
+.search-bar input {
+    background-color: #DBD6E0;
+    border: none; 
+    outline: none; 
+    flex: 1; 
+    position: relative; /* Ensure dropdown appears below this input */
+}
+
+.search-bar img {
+    margin: 0 5px;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%; /* Position below the input field */
+    left: 0;
+    width: 100%; /* Match the width of the input field */
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+}
+
+.dropdown-content div {
+    padding: 10px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.dropdown-content div:hover {
+    background-color: #f1f1f1;
+    
+}
+
+.helplan {
+    display: flex;
+    align-items: center;
+}
+
+.helplan ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.helplan ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.helplan ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.helplan ul li a:hover {
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.left{
+    margin-right:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    margin-top: -100px;
+    margin-left: -100px;
+    padding-right: 220px;
+}
+.right h1{
+    font-size: 42px;
+}
+.right h2{
+    margin-top:-35px ;
+    font-size: 35px;
+}
+.bt button{
+    margin: 5px;
+    width: 200px ;
+    height: 50px;
+    background-color: white;
+    font-size: 20px;
+    border: none;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.right p{
+    font-size: 20px;
+}
+.bt2 button{
+    margin: 5px;
+    width: 200px ;
+    height: 50px;
+    background-color: white;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin: 20px;
+}

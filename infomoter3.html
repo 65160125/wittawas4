@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 90px;
+            background-color: #03346E;
+            padding: 0 50px;
+            color: white;
+        }
+
+        header .logo img {
+            max-height: 100%;
+        }
+
+        .search-bar {
+            width: 60%;
+            height: 40px;
+            background-color: #DBD6E0; 
+            border-radius: 23px; 
+            padding: 10px; 
+            display: flex; 
+            align-items: center;
+            position: relative;
+        }
+
+        .search-bar input {
+            background-color: #DBD6E0;
+            border: none; 
+            outline: none; 
+            flex: 1; 
+        }
+
+        .search-bar img {
+            margin: 0 5px;
+        }
+
+        .dropdown-content {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 1000;
+            display: none;
+        }
+
+        .dropdown-content div {
+            padding: 10px;
+            cursor: pointer;
+            color: #000000;
+        }
+
+        .dropdown-content div:hover {
+            background-color: #f1f1f1;
+        }
+
+        .helplan {
+            display: flex;
+            align-items: center;
+        }
+
+        .helplan ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .helplan ul li {
+            margin: 0 20px;
+        }
+
+        .helplan ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .helplan ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 240px;
+            height: 80px;
+            font-size: 25px;
+        }
+
+        button:hover {
+            background-color: #022a56;
+        }
+        
+        .main-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="LOGO.png" width="250px" alt="Logo" id="logo">
+        </div>
+        <div class="search-bar">
+            <img src="container.png" alt="Search Container">
+            <input type="text" id="searchInput" placeholder="ค้นหาสินค้า ( ตอนนี้ค้นหาได้แค่ มอเตอร์ไซต์ )">
+            <div id="dropdown" class="dropdown-content"></div>
+            <img src="1st trailing-icon.png" alt="Trailing Icon">
+            <img src="Avatar (1).png" alt="Avatar">
+        </div>
+        <div class="helplan">
+            <ul>
+                <li><a href="#">ช่วยเหลือ</a></li>
+                <li><a href="#">TH|EN</a></li>
+            </ul>
+        </div>
+    </header>
+    <main id="mainContent">
+        <div class="top" style="margin-left: 120px;">
+            <h2>ที่อยู่ในการจัดส่ง</h2>
+            <table style="font-size: 30px;">
+                <tr>
+                    <td width="400px" style="text-align: start; font-weight: 400;">
+                        นายXXXXX<br>
+                        (+66)000000000
+                    </td>
+                    <td width="500px" style="text-align: start; font-weight: 400; margin-left: 20px;">
+                        บ้าน00/00 ต.ดกดกดกด  อ.แบบบบบบบ <br>
+                        จ.ะนระนรันะรรร 20200
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <table style="border-collapse: collapse; width: 100%; margin-top: 50px;">
+            <tr style="height: 70px;">
+                <th width="500px" style="color: rgb(0, 0, 0); font-size: 30px; font-weight: 700;">สั่งซื้อสินค้าแล้ว</th>
+                <th style="color: rgb(0, 0, 0); font-size: 30px; font-weight: 700;">ราคาต่อชิ้น</th>
+                <th style="color: rgb(0, 0, 0); font-size: 30px; font-weight: 700;">ราคารวม</th>
+            </tr>
+            <tr style="height: 250px;">
+                <td style="text-align: center;">
+                    <img style="width: 300px; height: 150px; object-fit: contain;" src="image 12.png" alt="Motorbike">
+                </td>
+                <td style="text-align: center; color: rgb(0, 0, 0); font-size: 30px; font-weight: 700;">฿770,000</td>
+                <td style="text-align: center; color: rgb(0, 0, 0); font-size: 30px; font-weight: 700;">฿770,000</td>
+            </tr>
+
+            <tr style="height: 70px;">
+                <th style="color: rgb(0, 0, 0); font-size: 30px; font-weight: 700;">จัดส่งแบบปกติ</th>
+                <th style="color: #0455CE; font-size: 30px; font-weight: 700;">เปลี่ยน</th>
+                <th style="color: rgb(0, 0, 0); font-size: 30px; font-weight: 700;">฿1,000</th>
+            </tr>
+            <tr style="height: 250px;">
+                <td style="text-align: center;">
+                    <button onclick="replaceContent()">ยืนยันการชำระเงิน</button>
+                </td>
+                <td style="text-align: center; color: rgb(0, 0, 0); font-size: 30px; font-weight: 700;">คำสั่งซื้อทั้งหมด(1 ชี้น)</td>
+                <td style="text-align: center; color: #BF6A02; font-size: 30px; font-weight: 700;">฿771,000</td>
+            </tr>
+        </table>
+    </main>
+
+    <script>
+        function replaceContent() {
+            document.getElementById('mainContent').innerHTML = `
+                <main class="main-content">
+                    <img width="300px" src="หน้าหลัก (11) 1 (1).png" alt="">
+                    <h3>ยืนยันการชำระเงิน</h3>
+                </main>
+            `;
+        }
+    </script>
+</body>
+</html>

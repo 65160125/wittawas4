@@ -1,0 +1,237 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: #03346E;
+    padding: 0 20px;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header .logo img {
+    max-height: 100%;
+}
+
+.search-bar {
+    width: 60%;
+    height: 40px;
+    background-color: #DBD6E0; 
+    border-radius: 23px; 
+    padding: 10px; 
+    display: flex; 
+    align-items: center;
+    position: relative; /* Ensure dropdown content is positioned relative to this container */
+}
+
+.search-bar input {
+    background-color: #DBD6E0;
+    border: none; 
+    outline: none; 
+    flex: 1; 
+    position: relative; /* Ensure dropdown appears below this input */
+}
+
+.search-bar img {
+    margin: 0 5px;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%; /* Position below the input field */
+    left: 0;
+    width: 100%; /* Match the width of the input field */
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+}
+
+.dropdown-content div {
+    padding: 10px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.dropdown-content div:hover {
+    background-color: #f1f1f1;
+    
+}
+
+.helplan {
+    display: flex;
+    align-items: center;
+}
+
+.helplan ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.helplan ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.helplan ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.helplan ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.mode .button{
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.mode {
+    padding-top: 5px;
+
+    /* margin: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    height: 300px;
+    width: auto;
+    background-color: #6EACDA;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+.detail .pk{
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 200px;
+}
+
+  .box-info {
+    background-color: white;
+    border: 3px solid #000000;
+    border-radius: 25px;
+    width: 300px;
+    height: 330px;
+    padding: 16px;
+    font-family: Arial, sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+  }
+  
+  .box-info img {
+    margin-top: 5px;
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 16px;
+  }
+  .box-info h3{
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  .box-info p{
+    margin-top: -20px;
+  }
+  .box-info .price{
+    font-size: 50px;
+    margin-top: -5px;
+  }
+  .info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .space{
+    height: 30px;
+  }
+
+  footer{
+    background-color: #03346E;
+    height: 40px;
+  }
+  .motoo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 8%;
+  }
+  .infomo-box{
+    display: flex;
+    border: solid black  1.5px;
+    width: 600px;
+    height: auto;
+    border-radius: 20px;
+  }
+  .infomo{
+    margin-left:20px ;
+  }
+  .imgmo img{
+    object-fit: contain;
+    width: 250px;
+    height: 150PX;
+  }
+
+  .infomoplce {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 600px 700px;
+    gap: 30px;
+    margin: 20px;
+}
+
+.infomo-box {
+    display: flex;
+    border: 1.5px solid #000;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 550px;
+    padding: 20px;
+}
+
+.imgmo img {
+  align-items: center;
+    width: 200px;
+    height: auto;
+}
+
+
+
+.infomo h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.infomo p {
+    font-size: 18px;
+    margin: 0;
+    color: #555;
+}
+
+.infomo .price {
+    padding-top: 30px;
+    font-size: 40px;
+    color: #000;
+    margin: 0;
+    font-weight: bold;
+}
